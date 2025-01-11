@@ -6,5 +6,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: git ls-files --format='%(objectname) %(objectsize) %(path)' > version
+      - run: git -C files ls-files --format='%(objectname) %(objectsize) %(path)' > version
       - uses: EndBug/add-and-commit@v9
