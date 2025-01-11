@@ -7,4 +7,4 @@ A "live" file is one that is enforced by the server, e.g. say you want to make s
 ### `.nojekyll`
 You're just storing static files, there's really no need to build anything. Feel free to throw this away if you want to get fancy.
 ## Setting up the GitHub page
-Reference the official documentation [HERE](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch).
+Reference the official documentation [HERE](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch). Choose the main branch and the `(root)` directory. You might want to disable GitHub Actions for that repository to skip the unnecessary building.
