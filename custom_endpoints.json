@@ -1,0 +1,10 @@
+{
+  "AssetBundlesEndpointProd": "http://localhost:4000",
+  "CraftingBaseUrlProd": "https://pvz-heroes.awspopcap.com/crafting/",
+  "MultiplayerBaseUrlProd": "http://localhost:4001/",
+  "PersistenceBaseUrlProd": "http://localhost:4002/",
+  "AccountBaseUrlProd": "https://pvz-heroes.awspopcap.com/accnt/",
+  "QuestsBaseUrlProd": "https://pvz-heroes.awspopcap.com/quests/",
+  "IdentityBaseUrlProd": "https://pvz-heroes.awspopcap.com/identity/",
+  "RewardBaseUrlProd": "https://pvz-heroes.awspopcap.com/eaSquared/"
+}
