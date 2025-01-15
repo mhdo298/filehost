@@ -341,9 +341,9 @@ with open('custom_endpoints.json') as f:
     custom = json.load(f)
 
 for key in custom:
-    config["Properties"][key] = custom[key]
+    original["Properties"][key] = custom[key]
 
 print(os.environ.get("GITHUB_ACCOUNT_NAME"), os.environ.get("GITHUB_REPO_NAME"))
 print(f'{os.environ.get("GITHUB_ACCOUNT_NAME")}/{os.environ.get("GITHUB_REPO_NAME")}')
 with open('plantsvszombiesheroes-android-live.json', 'w') as f:
-    json.dump(config, f)
+    json.dump(original, f)
