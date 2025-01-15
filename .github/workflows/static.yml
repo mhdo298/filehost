@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: git -C files ls-files --format='%(objectname) %(objectsize) %(path)' > version
-      - run: python merge_config.py $GITHUB_REPOSITORY $GITHUB_REF
+      - run: python merge_config.py $GITHUB_REPOSITORY
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

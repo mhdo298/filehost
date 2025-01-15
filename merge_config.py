@@ -342,6 +342,7 @@ with open('custom_endpoints.json') as f:
 for key in custom:
     original["Properties"][key] = custom[key]
 
-print(sys.argv)
+user, repo = sys.argv[1].split('/')
+print(f'https://{user}.github.io/{repo}/')
 with open('plantsvszombiesheroes-android-live.json', 'w') as f:
     json.dump(original, f)
