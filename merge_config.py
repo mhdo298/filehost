@@ -2,7 +2,7 @@ import json
 import sys
 import os
 
-original = {
+config = {
     "Properties": {
         "AllowCheatsDev": True,
         "AllowCheatsTest": True,
@@ -342,7 +342,7 @@ with open('custom_endpoints.json') as f:
     custom = json.load(f)
 
 for key in custom:
-    original["Properties"][key] = custom[key]
+    config["Properties"][key] = custom[key]
 
 original = 'https://pvzheroes-{0}.ecs.popcap.com/gats/'
 user, repo = sys.argv[1].split('/')
@@ -351,4 +351,4 @@ os.makedirs('0' * (len(original) - len(actual)))
 filename = '0' * (len(original) - len(actual)) + '/plantsvszombiesheroes-android-live.json'
 print(actual + filename)
 with open(filename, 'w') as f:
-    json.dump(original, f)
+    json.dump(config, f)
