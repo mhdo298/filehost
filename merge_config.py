@@ -1,6 +1,5 @@
 import json
-import os
-
+import sys
 original = {
     "Properties": {
         "AllowCheatsDev": True,
@@ -343,7 +342,6 @@ with open('custom_endpoints.json') as f:
 for key in custom:
     original["Properties"][key] = custom[key]
 
-print(os.environ.get("GITHUB_ACCOUNT_NAME"), os.environ.get("GITHUB_REPO_NAME"))
-print(f'{os.environ.get("GITHUB_ACCOUNT_NAME")}/{os.environ.get("GITHUB_REPO_NAME")}')
+print(sys.argv)
 with open('plantsvszombiesheroes-android-live.json', 'w') as f:
     json.dump(original, f)
